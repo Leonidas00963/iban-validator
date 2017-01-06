@@ -1,6 +1,7 @@
 package fi.kapsi.killnine.iban;
 
-import java.util.Objects;
+import static fi.kapsi.killnine.iban.util.NullCheck.requireNonNull;
+
 import java.util.regex.Pattern;
 
 /**
@@ -34,7 +35,7 @@ public class Iban {
      *             if <code>iban</code> does not match a generic IBAN pattern.
      */
     public Iban(String iban) {
-        Objects.requireNonNull(iban);
+        requireNonNull(iban);
         this.sourceString = normalize(iban);
         validatePattern(sourceString);
         this.countryCode = sourceString.substring(0, CHECK_DIGITS_LENGTH);

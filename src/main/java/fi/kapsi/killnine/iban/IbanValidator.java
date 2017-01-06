@@ -1,7 +1,8 @@
 package fi.kapsi.killnine.iban;
 
+import static fi.kapsi.killnine.iban.util.NullCheck.requireNonNull;
+
 import java.util.List;
-import java.util.Objects;
 
 import fi.kapsi.killnine.iban.spi.IbanValidation;
 import fi.kapsi.killnine.iban.spi.IbanValidationService;
@@ -62,7 +63,7 @@ public class IbanValidator {
      * @throws NullPointerException     if given IBAN is <code>null</code>.
      */
     public boolean validate(Iban iban) {
-        Objects.requireNonNull(iban);
+        requireNonNull(iban);
         if (requireNumberValidation) {
             List<IbanValidation> validations = VALIDATION_SERVICE.getValidations(iban);
             if (validations.isEmpty()) {
