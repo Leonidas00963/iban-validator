@@ -10,15 +10,16 @@ import fi.kapsi.killnine.iban.spi.IbanValidationService;
 /**
  * Validator for IBAN account numbers.
  * 
+ * @see IbanValidationService
  * @see <a href="https://en.wikipedia.org/wiki/International_Bank_Account_Number">IBAN on Wikipedia</a>
  */
 public class IbanValidator {
 
     private static final IbanValidationService VALIDATION_SERVICE = new IbanValidationService();
-    private final boolean requireNumberValidation;
+    private final boolean requireAdditionalValidations;
 
     /**
-     * Constructs a validator which does not require account number validation.
+     * Constructs a validator which does not require additional validations.
      */
     public IbanValidator() {
         this(false);
@@ -27,15 +28,14 @@ public class IbanValidator {
     /**
      * Constructs a validator.
      * 
-     * @param requireNumberValidation
-     *            whether or not to require account number validation.
+     * @param requireAdditionalValidations   whether or not to require additional validations.
      */
-    public IbanValidator(boolean requireNumberValidation) {
-        this.requireNumberValidation = requireNumberValidation;
+    public IbanValidator(boolean requireAdditionalValidations) {
+        this.requireAdditionalValidations = requireAdditionalValidations;
     }
 
     /**
-     * Validates given IBAN string. If bank account number validation is required, returns <code>false</code> if no
+     * Validates given IBAN string. If additional validations are required, returns <code>false</code> if no
      * {@link IbanValidation} can validate the IBAN. If several validations can, <i>all</i> of them must return
      * <code>true</code> in order to pass validation.
      * 
@@ -52,8 +52,8 @@ public class IbanValidator {
     }
     
     /**
-     * Validates given <code>Iban</code>. If bank account number validation is required, returns <code>false</code> if
-     * no {@link IbanValidation} can validate the IBAN. If several validations can, <i>all</i> of them must return
+     * Validates given <code>Iban</code>. If additional validations are required, returns <code>false</code> if no
+     * {@link IbanValidation} can validate the IBAN. If several validations can, <i>all</i> of them must return
      * <code>true</code> in order to pass validation.
      * 
      * @param iban      IBAN to validate.
@@ -64,7 +64,7 @@ public class IbanValidator {
      */
     public boolean validate(Iban iban) {
         requireNonNull(iban);
-        if (requireNumberValidation) {
+        if (requireAdditionalValidations) {
             List<IbanValidation> validations = VALIDATION_SERVICE.getValidations(iban);
             if (validations.isEmpty()) {
                 return false;
