@@ -7,8 +7,8 @@ import fi.kapsi.killnine.iban.Iban;
 /**
  * Interface for IBAN validations.
  * 
- * @see {@link IbanValidationService}
- * @see {@link ServiceLoader}
+ * @see IbanValidationService
+ * @see ServiceLoader
  */
 public interface IbanValidation {
 

@@ -16,8 +16,7 @@ public class IbanValidationService {
     /**
      * Gets configured validations capable of validating the given IBAN.
      * 
-     * @param iban
-     *            IBAN to validate.
+     * @param iban      IBAN to validate.
      * 
      * @return validations for validating the IBAN.
      */

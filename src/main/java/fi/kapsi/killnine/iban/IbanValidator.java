@@ -10,7 +10,7 @@ import fi.kapsi.killnine.iban.spi.IbanValidationService;
 /**
  * Validator for IBAN account numbers.
  * 
- * @see <a href="https://en.wikipedia.org/wiki/International_Bank_Account_Number">Wikipedia entry</a>.
+ * @see <a href="https://en.wikipedia.org/wiki/International_Bank_Account_Number">IBAN on Wikipedia</a>
  */
 public class IbanValidator {
 
@@ -52,8 +52,8 @@ public class IbanValidator {
     }
     
     /**
-     * Validates given {@link Iban}. If bank account number validation is required, returns <code>false</code> if no
-     * {@link IbanValidation} can validate the IBAN. If several validations can, <i>all</i> of them must return
+     * Validates given <code>Iban</code>. If bank account number validation is required, returns <code>false</code> if
+     * no {@link IbanValidation} can validate the IBAN. If several validations can, <i>all</i> of them must return
      * <code>true</code> in order to pass validation.
      * 
      * @param iban      IBAN to validate.
