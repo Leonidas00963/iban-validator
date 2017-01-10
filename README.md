@@ -1,5 +1,6 @@
 # iban-validator
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6a47d943986f4a5b991cdf60351621be)](https://www.codacy.com/app/jakaarl/iban-validator?utm_source=github.com&utm_medium=referral&utm_content=jakaarl/iban-validator&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/jakaarl/iban-validator.svg?branch=master)](https://travis-ci.org/jakaarl/iban-validator)
 
 A Java IBAN validator library. No runtime dependencies, requires only JDK 1.6.
