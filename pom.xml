@@ -25,9 +25,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com/jakaarl/iban-validator.git</connection>
-    <developerConnection>scm:git:ssh://github.com:jakaarl/iban-validator.git</developerConnection>
-    <url>http://github.com/jakaarl/iban-validator/tree/master</url>
+    <connection>scm:git:https://github.com/jakaarl/iban-validator.git</connection>
+    <developerConnection>scm:git:git@github.com:jakaarl/iban-validator.git</developerConnection>
+    <url>https://github.com/jakaarl/iban-validator/tree/master</url>
   </scm>
 
   <distributionManagement>
