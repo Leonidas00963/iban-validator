@@ -29,12 +29,12 @@ public class Iban {
      * @param iban
      *            IBAN as a string.
      * 
-     * @throws NullPointerException
-     *             if <code>iban</code> is <code>null</code>.
-     * @throws IllegalArgumentException
+     * @throws InvalidIbanException
      *             if <code>iban</code> does not match a generic IBAN pattern.
+     * @throws IllegalArgumentException
+     *             if <code>iban</code> is <code>null</code>.
      */
-    public Iban(String iban) {
+    public Iban(String iban) throws InvalidIbanException, IllegalArgumentException {
         requireNonNull(iban);
         this.sourceString = normalize(iban);
         validatePattern(sourceString);
@@ -47,9 +47,9 @@ public class Iban {
         return iban.trim().replace(" ", "").toUpperCase();
     }
 
-    private static void validatePattern(String iban) {
+    private static void validatePattern(String iban) throws InvalidIbanException {
         if (!IBAN_PATTERN.matcher(iban).matches()) {
-            throw new IllegalArgumentException("Argument does not match valid IBAN pattern");
+            throw new InvalidIbanException("Argument does not match valid IBAN pattern");
         }
     }
 

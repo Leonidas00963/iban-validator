@@ -6,13 +6,13 @@ import org.junit.Test;
 
 public class IbanTest {
     
-    @Test(expected = NullPointerException.class)
-    public void throwsNullPointerExceptionOnNullArgument() {
+    @Test(expected = IllegalArgumentException.class)
+    public void throwsIllegalArgumentExceptionOnNullArgument() {
         new Iban(null);
     }
     
-    @Test(expected = IllegalArgumentException.class)
-    public void throwsIllegalArgumentExceptionOnInvalidArgument() {
+    @Test(expected = InvalidIbanException.class)
+    public void throwsInvalidIbanExceptionOnInvalidArgument() {
         new Iban("1234");
     }
     

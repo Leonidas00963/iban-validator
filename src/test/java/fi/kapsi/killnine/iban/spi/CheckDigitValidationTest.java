@@ -9,7 +9,8 @@ import fi.kapsi.killnine.iban.Iban;
 
 public class CheckDigitValidationTest {
 
-    static final Iban VALID_FINNISH_IBAN = new Iban("FI4250001510000023"); // valid example IBAN from Wikipedia article
+    // valid example IBAN from Wikipedia article
+    protected static final Iban VALID_FINNISH_IBAN = new Iban("FI4250001510000023");
     private final CheckDigitValidation validation = new CheckDigitValidation();
     
     @Test

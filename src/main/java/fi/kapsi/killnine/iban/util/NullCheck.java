@@ -15,11 +15,11 @@ public class NullCheck {
      * 
      * @param obj       argument to null-check.
      * 
-     * @throws NullPointerException     if given argument is <code>null</code>.
+     * @throws IllegalArgumentException if given argument is <code>null</code>.
      */
-    public static void requireNonNull(Object obj) throws NullPointerException {
+    public static void requireNonNull(Object obj) throws IllegalArgumentException {
         if (obj == null) {
-            throw new NullPointerException("Precondidition failed: non-null argument required");
+            throw new IllegalArgumentException("Precondidition failed: non-null argument required");
         }
     }
 
