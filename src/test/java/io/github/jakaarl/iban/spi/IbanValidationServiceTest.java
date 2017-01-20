@@ -1,4 +1,4 @@
-package fi.kapsi.killnine.iban.spi;
+package io.github.jakaarl.iban.spi;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,7 +6,9 @@ import java.util.List;
 
 import org.junit.Test;
 
-import fi.kapsi.killnine.iban.Iban;
+import io.github.jakaarl.iban.Iban;
+import io.github.jakaarl.iban.spi.IbanValidation;
+import io.github.jakaarl.iban.spi.IbanValidationService;
 
 public class IbanValidationServiceTest {
     

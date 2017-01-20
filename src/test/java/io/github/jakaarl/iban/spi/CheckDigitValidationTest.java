@@ -1,11 +1,12 @@
-package fi.kapsi.killnine.iban.spi;
+package io.github.jakaarl.iban.spi;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import fi.kapsi.killnine.iban.Iban;
+import io.github.jakaarl.iban.Iban;
+import io.github.jakaarl.iban.spi.CheckDigitValidation;
 
 public class CheckDigitValidationTest {
 

@@ -1,4 +1,4 @@
-package fi.kapsi.killnine.iban;
+package io.github.jakaarl.iban;
 
 /**
  * A runtime exception indicating an IBAN does not meet the minimal validity requirements.

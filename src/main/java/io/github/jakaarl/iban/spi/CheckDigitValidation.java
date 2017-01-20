@@ -1,8 +1,8 @@
-package fi.kapsi.killnine.iban.spi;
+package io.github.jakaarl.iban.spi;
 
 import java.math.BigInteger;
 
-import fi.kapsi.killnine.iban.Iban;
+import io.github.jakaarl.iban.Iban;
 
 /**
  * An {@link IbanValidation} for validating IBAN check digits.

@@ -1,6 +1,6 @@
-package fi.kapsi.killnine.iban;
+package io.github.jakaarl.iban;
 
-import static fi.kapsi.killnine.iban.util.NullCheck.requireNonNull;
+import static io.github.jakaarl.iban.util.NullCheck.requireNonNull;
 
 import java.util.regex.Pattern;
 

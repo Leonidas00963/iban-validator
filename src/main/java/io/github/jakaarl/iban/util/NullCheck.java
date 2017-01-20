@@ -1,4 +1,4 @@
-package fi.kapsi.killnine.iban.util;
+package io.github.jakaarl.iban.util;
 
 /**
  * A simple null-check utility. Yes, <code>Objects.requireNonNull()</code> would do this,

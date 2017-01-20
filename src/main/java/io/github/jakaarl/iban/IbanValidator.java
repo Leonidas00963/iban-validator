@@ -1,11 +1,11 @@
-package fi.kapsi.killnine.iban;
+package io.github.jakaarl.iban;
 
-import static fi.kapsi.killnine.iban.util.NullCheck.requireNonNull;
+import static io.github.jakaarl.iban.util.NullCheck.requireNonNull;
 
 import java.util.List;
 
-import fi.kapsi.killnine.iban.spi.IbanValidation;
-import fi.kapsi.killnine.iban.spi.IbanValidationService;
+import io.github.jakaarl.iban.spi.IbanValidation;
+import io.github.jakaarl.iban.spi.IbanValidationService;
 
 /**
  * Validator for IBAN account numbers.

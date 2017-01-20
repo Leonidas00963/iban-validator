@@ -1,4 +1,4 @@
-package fi.kapsi.killnine.iban.spi;
+package io.github.jakaarl.iban.spi;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,7 +7,7 @@ import java.util.Properties;
 import java.util.TreeMap;
 import java.util.regex.Pattern;
 
-import fi.kapsi.killnine.iban.Iban;
+import io.github.jakaarl.iban.Iban;
 
 /**
  * Validation for checking IBANs against country-specific patterns.

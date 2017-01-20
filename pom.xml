@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>fi.kapsi.killnine</groupId>
+  <groupId>io.github.jakaarl</groupId>
   <artifactId>iban-validator</artifactId>
-  <version>0.1.2-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>IBAN Validator</name>
   <description>A Java library for IBAN validation</description>
-  <url>https://github.com/jakaarl/iban-validator</url>
+  <url>https://jakaarl.github.io/iban-validator</url>
 
   <licenses>
     <license>

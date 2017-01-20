@@ -1,8 +1,11 @@
-package fi.kapsi.killnine.iban;
+package io.github.jakaarl.iban;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import io.github.jakaarl.iban.Iban;
+import io.github.jakaarl.iban.InvalidIbanException;
 
 public class IbanTest {
     

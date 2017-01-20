@@ -1,10 +1,10 @@
-package fi.kapsi.killnine.iban.spi;
+package io.github.jakaarl.iban.spi;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ServiceLoader;
 
-import fi.kapsi.killnine.iban.Iban;
+import io.github.jakaarl.iban.Iban;
 
 /**
  * A service for acquiring IBAN validations. Uses <code>ServiceLoader</code> as a simple SPI mechanism.

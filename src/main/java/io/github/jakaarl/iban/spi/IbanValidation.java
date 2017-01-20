@@ -1,8 +1,8 @@
-package fi.kapsi.killnine.iban.spi;
+package io.github.jakaarl.iban.spi;
 
 import java.util.ServiceLoader;
 
-import fi.kapsi.killnine.iban.Iban;
+import io.github.jakaarl.iban.Iban;
 
 /**
  * Interface for IBAN validations.

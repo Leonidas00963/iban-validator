@@ -1,10 +1,10 @@
-package fi.kapsi.killnine.iban.spi;
+package io.github.jakaarl.iban.spi;
 
 import java.util.Locale;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import fi.kapsi.killnine.iban.Iban;
+import io.github.jakaarl.iban.Iban;
 
 /**
  * An {@link IbanValidation} which checks that the IBAN contains a valid country code. Here &quot;valid&quot; simply
